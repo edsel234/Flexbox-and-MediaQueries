@@ -10,18 +10,34 @@
     background-color: #d1d1d1;
 
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 600px) {
+    .flex-container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        text-align: center;
+    }
+    
+}
+
 .flex-item{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 800;
     background-color: greenyellow;
-    margin: 3rem;
-    padding: 6rem;
+    margin:1.5rem;
+    padding: 4rem;
     border: solid red;
+}
 
-
+@media screen and (max-width: 760px) {
+    .flex-item{
+        font-size: 1.5rem;
+        padding: 4rem;
+        margin:1rem;
+    }
 }
